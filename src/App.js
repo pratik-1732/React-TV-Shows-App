@@ -1,15 +1,15 @@
-// In App.js
-import React from "react";
-import ShowList from "./ShowList"; // Assuming the case and path are correct
-import ShowDetails from "./ShowDetails"; // Assuming the case and path are correct
-import "./index.css"; // Assuming the case and path are correct
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ShowList from "./ShowList";
+import ShowDetails from "./ShowDetails";
 
 function App() {
   return (
-    <div>
-      <ShowList />
-      <ShowDetails />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<ShowList />} />
+        <Route path="/show/:id" element={<ShowDetails />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
