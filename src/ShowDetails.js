@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { useParams, useNavigate, Link } from "react-router-dom";
-import { CSSProperties } from "react";
+//import { useParams, useNavigate, Link } from "react-router-dom";
+//import { CSSProperties } from "react";
 import ClipLoader from "react-spinners/ClipLoader";
 import Rating from "@mui/material/Rating";
 
@@ -39,12 +39,12 @@ function ShowDetails() {
     fetchData();
   }, [id]);
 
-  const handleBookTicket = () => {
-    // Implement your logic for booking a movie ticket here
-    // You can use local storage to store user details
-    // For simplicity, let's just log a message for now
-    console.log("Ticket booked for:", showDetails.name);
-  };
+  // const handleBookTicket = () => {
+  //   // Implement your logic for booking a movie ticket here
+  //   // You can use local storage to store user details
+  //   // For simplicity, let's just log a message for now
+  //   console.log("Ticket booked for:", showDetails.name);
+  // };
 
   if (isLoading)
     return (
