@@ -1,20 +1,16 @@
-// App.js
+// In App.js
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import ShowList from "./components/ShowList";
-import ShowDetails from "./components/ShowDetails";
+import ShowList from "./ShowList"; // Assuming the case and path are correct
+import ShowDetails from "./ShowDetails"; // Assuming the case and path are correct
+import "./index.css"; // Assuming the case and path are correct
 
-const App = () => {
+function App() {
   return (
-    <Router>
-      <div className="container">
-        <Switch>
-          <Route path="/" exact component={ShowList} />
-          <Route path="/show/:id" component={ShowDetails} />
-        </Switch>
-      </div>
-    </Router>
+    <div>
+      <ShowList />
+      <ShowDetails />
+    </div>
   );
-};
+}
 
 export default App;
