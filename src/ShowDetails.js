@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-//import { useParams, useNavigate, Link } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 //import { CSSProperties } from "react";
 import ClipLoader from "react-spinners/ClipLoader";
 import Rating from "@mui/material/Rating";
